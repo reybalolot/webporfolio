@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+}
+
+nav a {
+/* find another way to not use !important */
+    color: #ffffff !important; 
+}
+
+.landing-container {
+/*    background-color: #141414;*/
+    background: rgb(20,20,20);
+    background: linear-gradient(0deg, rgba(20,20,20,1) 52%, rgba(0,0,0,1) 100%);
+    color: #ffffff;
+}
+
+.landing-container img {
+    max-height: 400px;
+}
+
+
+.projects-container {
+/*    background-color: #262626;*/
+    background: rgb(38,38,38);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 52%, rgba(38,38,38,1) 100%);
+}
+
+.card {
+    max-width: 50vw;
+}
+
+.img-card-1 {
+    background: url("https://i.pinimg.com/originals/45/8b/0a/458b0a1ea92c0b7e39d0d427c5262dfb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-card-2 {
+    background: url("https://miro.medium.com/v2/resize:fit:3164/1*LSinbzlHYROHgxpQUWtyHQ.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-card-3 {
+    background: url("https://www.andreasreiterer.at/wp-content/uploads/2017/11/react-logo-825x510.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.tools-container {
+/*    background-color: #262626;*/
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(6,6,6,1) 14%, rgba(0,0,0,1) 77%);
+}
+
+.contact-container {
+    background: #060606;
+}
+
+.contact-image {
+    min-height: 200px;
+}
+
+.fa-brands {
+    color: #ffffff;
+}
+
+#form-btn {
+    background: #ffff;
+    color: #000000;
+    font-weight:bolder;
+}
+
+footer {
+    background: #000000;
+}
