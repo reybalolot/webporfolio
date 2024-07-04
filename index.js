@@ -1,5 +1,5 @@
 "capstone": {
-	"liveLink": "",
-	"name": "Rey Balolot | Portfolio",
+	"liveLink": "https://reybalolot.github.io/webporfolio/",
+	"name": "John Rey Balolot",
 	"isMulti": false
 }
