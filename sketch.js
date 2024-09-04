@@ -12,7 +12,7 @@ function make2dArray(cols, rows) {
 let grid, cols, rows;
 let boxSize = 20;
 let alpha = 255;
-let trail = 15;
+let trail = 5;
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
@@ -23,11 +23,15 @@ function setup() {
 
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
+    mouseTrail();
 }
 
 function draw() {
     background('#272727');
+    mouseTrail();
+}
 
+function mouseTrail() {
     let x = floor(mouseX / boxSize);
     let y = floor(mouseY / boxSize);
     grid[x][y] = alpha
@@ -37,9 +41,19 @@ function draw() {
             if (grid[i][j] > 0) {
                 let x = i * boxSize;
                 let y = j * boxSize;
-                noFill()
-                stroke(80, 95, 95, grid[i][j]);
-                square(x, y, boxSize);
+                if(isEl){
+                    noStroke()
+                }else {
+
+                    noFill()
+                    stroke(80, 95, 95, grid[i][j]);
+                    square(x, y, boxSize);
+                    square(x, y, boxSize);
+                    // square(x, y + boxSize, boxSize)
+                    // square(x + boxSize, y, boxSize)
+                    // square(x - boxSize, y, boxSize)
+                    // square(x, y - boxSize, boxSize)
+                }
                 // ellipse(x + boxSize / 2, y + boxSize / 2, boxSize * 2);
             }
         }
@@ -53,3 +67,18 @@ function draw() {
         }
     }
 }
+
+let isEl = false;
+let elList = document.querySelectorAll('.nav-list')
+
+elList.forEach(el => {
+
+   el.addEventListener('mouseover', () => {
+    el.classList.add('nav-select')
+    isEl = true
+    })
+    el.addEventListener('mouseout', () => {
+        el.classList.remove('nav-select')
+        isEl= false
+    })
+})

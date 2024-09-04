@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    user-select: none;
 }
 
 canvas {
@@ -43,11 +43,17 @@ aside {
 }
 
 li, .nav-list {
-
     margin-bottom: .5rem;
     text-decoration: none;
     list-style-type: none;
-    color: var(--primary-color)
+    color: var(--primary-color);
+
+}
+
+.nav-select {
+    border: solid 2px #4f5f5d;
+    transition: 30ms ease-in;
+    transform:  none;
 }
 
 .main-container {
@@ -97,7 +103,6 @@ main {
     width: auto;
     height: 100dvh;
 
-    color: #000000;
 }
 
 
