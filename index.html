@@ -3,258 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap Link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- CSS Link -->
     <link rel="stylesheet" href="index.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
     <title>Rey Balolot | Portfolio</title>
 </head>
 <body>
+    <main>
+        <nav class="sidebar">
+            <div class="title">
+                <h2>REYYY</h2>
+                <h6 class="status">is available for work</h6>
+            </div>
+            <div class="link-items">
+                <div class="top-links">
+                    <ul>
+                        <li>
+                            <a href="" class="nav-list">works</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-list">about</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-list">contact</a>
+                        </li>
+                    </ul>
+                </div>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
-        <div class="container-fluid">
-            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav mx-auto">
-                    <a class="nav-link px-3" aria-current="page" href="#landing">Home</a>
-                    <a class="nav-link px-3" href="#projects">Projects</a>
-                    <a class="nav-link px-3" href="#tools">Tools</a>
-                    <a class="nav-link px-3" href="#contacts">Contacts</a>
+                <div class="bottom-links">
+                    <ul>
+                        <li>
+                            <a href="" class="nav-list">linkedIn</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-list">facebook</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-list">github</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- Landing Section -->
-    <section id="landing">
-        <div class="landing-container container-fluid text-center">
-            <div class="row p-5 justify-content-center">
-                <div class="col-md-6">
-                    <!-- <img src="https://avatars.githubusercontent.com/u/99653054?v=4" alt="user_profile" class="img-profile img-fluid rounded-circle border-0"> -->
-                    <img src="https://lh3.googleusercontent.com/a/ACg8ocIhpjs3KIsGSLOIeZ4_9_LVe9gPCp1phVTW3CFogVxarHfdn25Y=s288-c-no" alt="user_profile" class="img-profile img-fluid rounded-circle border-0">
-                    <h4 class="name pt-3">John Rey Balolot</h4>
-                    <h6>Full Stack Developer</h6>
-                    <p>
-                        Hi! I am a Full Stack Developer, I am proficient in both front-end and back-end development. I create the visual elements users interact with, using technologies like HTML, CSS, and JavaScript. I craft responsive layouts, design user interfaces as well as the behind the scenes, such as handling databases, server logic, and APIs.
-                    </p>
-                </div>
+        </nav>
+        <section class="main-container">
+            <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa reprehenderit aperiam impedit officiis vero accusamus, velit nam repellendus atque, voluptates libero voluptatem molestiae perspiciatis nihil minima hic? Et, totam nihil.
+                Veniam, ut aut? Sequi quae nam beatae enim, molestias, tenetur sit cupiditate rerum reiciendis at eveniet aperiam? Inventore facilis ipsum, temporibus eveniet neque autem ipsa ducimus porro quae, beatae illo.
             </div>
-        </div>
-    </section>
+        </section>
+        <aside class="footer">
+            <div class="footer-items">
+                <h6>
+                    &copy; All Rights Reserved
+                </h6>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="projects-container container-fluid justify-content-center text-center pt-3">
-            <div class="row justify-content-center py-5">
-                <h3><i class="fa-solid fa-book pe-4"></i>Projects</h3>
-                <div class="col-md-8">
-                    <div class="d-flex align-items-stretch justify-content-md-start justify-content-center">
-                        <div class="card m-3 bg-transparent border text-md-start text-center rounded-5">
-                            <div class="row g-0">
-                                <div class="col-md-4 img-card-1">
-                                    <img src="https://i.pinimg.com/originals/45/8b/0a/458b0a1ea92c0b7e39d0d427c5262dfb.jpg" class="d-md-none img-fluid h-100" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Shoppet</h5>
-                                        <p class="card-text">
-                                            An e-commerce website is a digital platform where businesses showcase their products or services for online transactions. Shoppers can browse, select items, and make purchases conveniently from their devices. Effective planning ensures a user-friendly experience, secure payment gateways, and efficient inventory management.
-                                        </p>
-                                        <p class="card-text"><small class="text-muted">Last updated few years ago.</small></p>
-                                        <div class="d-flex bd-highlight">
-                                            <button class="w-100 me-2 py-2 px-4 rounded-3 bg-transparent text-light border justify-content-end" type="button" data-bs-toggle="modal" data-bs-target="#previewModal">Preview</button>
-                                            <a href="https://www.github.com" class="flex-shrink-1 py-2 px-md-5 px-1 rounded-3 bg-transparent text-light border" type="button" href=""><i class="fa-brands fa-github fa-xl"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="d-flex align-items-stretch justify-content-md-center justify-content-center">
-                        <div class="card m-3 bg-transparent border text-md-start text-center">
-                            <div class="row g-0">
-                                <div class="col-md-4 img-card-2 d-md-none">
-                                    <img src="https://miro.medium.com/v2/resize:fit:3164/1*LSinbzlHYROHgxpQUWtyHQ.jpeg" class="d-md-none img-fluid h-100" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title"><strong>Disconn</strong></h5>
-                                        <p class="card-text">
-                                            This project involves creating a RESTful API using Node.js and Express to manage user profiles. It includes features like user registration, login, profile updates, and secure token-based authentication
-                                        </p>
-                                        <p class="card-text"><small class="text-muted">Last updated few years ago.</small></p>
-                                        <div class="d-flex">
-                                            <button class="w-100 me-2 py-2 px-4 rounded-3 bg-transparent text-light border justify-content-end" type="button" data-bs-toggle="modal" data-bs-target="#previewModal">Preview</button>
-                                            <a href="https://www.github.com" class="flex-shrink-1 py-2 px-md-5 px-1 rounded-3 bg-transparent text-light border" type="button"><i class="fa-brands fa-github fa-xl"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 img-card-2 d-sm-none d-md-block">
-                                    <img src="https://miro.medium.com/v2/resize:fit:3164/1*LSinbzlHYROHgxpQUWtyHQ.jpeg" class="d-md-none img-fluid h-100" alt="...">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="d-flex align-items-stretch justify-content-md-end justify-content-center">
-                        <div class="card m-3 bg-transparent border text-md-start text-center">
-                            <div class="row g-0">
-                                <div class="col-md-4 img-card-3">
-                                    <img src="https://www.andreasreiterer.at/wp-content/uploads/2017/11/react-logo-825x510.jpg" class="d-md-none img-fluid h-100" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title"><strong>Overblock</strong></h5>
-                                        <p class="card-text">
-                                            A web app that enables users to create and manage time blocks for different activities. Users can allocate specific time slots for work, study, exercise, or other tasks, ensuring better productivity and balance throughout the day
-                                        </p>
-                                        <p class="card-text"><small class="text-muted">Last updated few years ago.</small></p>
-                                        <div class="d-flex">
-                                            <button class="w-100 me-2 py-2 px-4 rounded-3 bg-transparent text-light border justify-content-end" type="button" data-bs-toggle="modal" data-bs-target="#previewModal">Preview</button>
-                                            <a href="https://www.github.com" class="flex-shrink-1 py-2 px-md-5 px-1 rounded-3 bg-transparent text-light border"><i class="fa-brands fa-github fa-xl"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+        </aside>
+    </main>
 
-        </div>    
-    </section>
-
-    <!-- Tools Section -->
-    <section id="tools">
-        <div class="tools-container container-fluid pt-5 text-center">
-            <h3><i class="fa-solid fa-screwdriver-wrench pe-4"></i>Tools</h3>
-            <div id="other-tools" class="d-md-flex d-flex flex-md-column justify-content-center p-5">
-                <div id="tools-1" class="d-md-flex d-flex justify-content-center flex-md-row flex-column">
-                    <img src="images/logo-html5.png" alt=""/>
-                    <img src="images/logo-css3.png" alt=""/>
-                    <img src="images/logo-javascript.png" alt=""/>
-                    <img src="images/logo-bootstrap.png" alt=""/>
-                    <img src="images/logo-react.png" alt=""/>
-                </div>
-                <div id="tools-2" class="d-md-flex d-flex justify-content-center flex-md-row flex-column">
-                    <img src="images/logo-nodejs.png" alt=""/>
-                    <img src="images/logo-expressjs.png" alt=""/>
-                    <img src="images/logo-rest.png" alt=""/>
-                    <img src="images/logo-git.png" alt=""/>
-                    <img src="images/logo-postman.png" alt=""/>
-                    <img src="images/logo-mongodb.png" alt=""/>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contacts">
-        <div class="contact-container container-fluid">
-            <div class="row">
-                <div class="col-md-6 text-center d-flex flex-column justify-content-center align-items-center py-md-0" id="contact-image">
-                    <img src="./images/red-king.gif">
-                </div>
-                <div class="col-md-5 px-5 pt-5 mx-auto my-5">
-                    <h2 id="contact-header" class="pt-5 pb-3">Contact Me</h2>
-
-                    <div class="socials">
-                        <a href="https://www.facebook.com" class="px-2"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-                        <a href="https://www.github.com" class="px-2"><i class="fa-brands fa-github fa-2xl"></i></a>
-                        <a href="https://www.x.com" class="px-2"><i class="fa-brands fa-twitter fa-2xl"></i></a>
-                    </div>
-
-
-                    <form class="mt-3">
-                        <div class="form-group my-4">
-                            <label for="exampleFormControlInput1">Name</label>
-                            <input type="text" class="form-control p-3" id="exampleFormControlInput1" placeholder="Your Name">
-                        </div>
-
-                        <div class="form-group my-4">
-                            <label for="exampleFormControlInput1">Email Address</label>
-                            <input type="email" class="form-control p-3" id="exampleFormControlInput1" placeholder="sample@email.com">
-                        </div>
-
-                        <div class="form-group my-4">
-                            <label for="exampleFormControlTextarea1">Message</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
-                        </div>
-
-                        <div class="my-5 d-flex justify-content-end">
-                            <button id="form-btn" type="button" class="btn content" data-bs-toggle="modal" data-bs-target="#contactModal">Submit</button>
-                        </div>
-
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<footer class="py-3 text-center">
-    2024 | All rights reserved.
-</footer>
-
-<!-- Modals Section -->
-
-<!-- Project Preview Modal -->
-<div class="modal fade" id="previewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content bg-dark border">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Currently Unavailable</h5>
-                <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>
-                    Sorry this preview is temporarily unavailable.
-                </p>
-                <p>
-                    The project is still on <strong>development</strong> and will be released anytime soon.
-                </p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <!-- <button type="button" class="btn btn-primary">OK</button> -->
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Contact Modal -->
-<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content bg-dark border">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Message Sent</h5>
-                <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>
-                    This is a preview of a working modal message.
-                </p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
-                <!-- <button type="button" class="btn btn-primary">OK</button> -->
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- Bootstrap Script -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<!-- Fontawesome Script -->
-<script src="https://kit.fontawesome.com/f77fb5b473.js" crossorigin="anonymous"></script>
+    <!-- Fontawesome Script -->
+    <script src="https://kit.fontawesome.com/f77fb5b473.js" crossorigin="anonymous"></script>
+    <script src="sketch.js"></script>
 </body>
-</html> 
+</html>
