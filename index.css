@@ -84,6 +84,11 @@ li, .nav-list {
     color: var(--primary-color)
 }
 
+.footer-items h6 {
+    justify-content: center;
+    align-items: center;
+}
+
 main {
     position: absolute;
     display: flex;
