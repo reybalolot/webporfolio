@@ -24,12 +24,12 @@ function setup() {
 
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
-    mouseTrail();
+    // mouseTrail();
 }
 
 function draw() {
     background('#272727');
-    mouseTrail();
+    // mouseTrail();
 }
 
 function mouseTrail() {

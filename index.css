@@ -6,6 +6,7 @@
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
 }
 
 canvas {
@@ -19,18 +20,10 @@ canvas {
     --dark-primary-color: #272727;
 }
 
-nav {
-    /* display: flex; */
-    padding: 2%;
+.sidebar {
+    padding: 1% 2%;
     width: clamp(370px, 1.5rem, 2rem);
     height: 100dvh;
-    /* background-color: var(--dark-primary-color) ; */
-}
-
-aside {
-    width: clamp(370px, 1.5rem, 2rem);
-    height: 100dvh;
-    /* background-color: var(--dark-primary-color) ; */
 }
 
 .title {
@@ -69,11 +62,18 @@ li, .nav-list {
     justify-content: center;
     align-items: center;
 
+    /* overflow-y: scroll; */
+    /*
+    -moz-scrollbar-width: none;
+    -webkit-scrollbar-width: none;
+    -ms-scrollbar-width: none;
+    scrollbar-width:none; */
+
     padding: 10%;
+    width: auto;
+    height: 100dvh;
 
     color: var(--primary-color);
-    /* background-color: var(--dark-primary-color); */
-    /* user-select: none; */
 }
 
 .link-items {
@@ -85,9 +85,10 @@ li, .nav-list {
     flex-direction: column;
 }
 
-.footer-items {
-    padding-bottom: 10%;
-    width: auto;
+.rightbar {
+    padding-bottom: 1%;
+    min-width: 150px;
+    width: clamp(150px, 10rem, 2rem);
     height: 100%;
 
     display: flex;
@@ -98,9 +99,8 @@ li, .nav-list {
     color: var(--primary-color)
 }
 
-.footer-items h6 {
-    justify-content: center;
-    align-items: center;
+.footer-items {
+    text-align: center;
 }
 
 main {
@@ -111,26 +111,60 @@ main {
     width: auto;
     height: 100dvh;
 
+    background-color: #272727;
 }
 
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
+
+    /* background-color:red; */
+    width: auto;
+}
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+
+.card {
+    width: auto;
+    height: auto;
+}
+/*
+.card-1 {
+
+} */
 
 /*768px*/
 @media only screen and (max-width: 900px) {
-    nav, aside {
+    .sidebar, .rightbar {
+        /* display: none; */
+    }
+    .link-items {
         display: none;
-        background-color: lightblue;
+    }
+    .title {
+        margin: 0;
+    }
+    .sidebar, .rightbar {
+        width: auto;
+        height: auto;
+    }
+    main {
+        flex-direction: column;
     }
 }
 
 
 
 /* .magicpattern {
-    position: absolute;
-    z-index: -1;
-    width: 80%;
-    height:90%;
-    background-size:contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CradialGradient id=%22b%22 r=%22100%25%22 cx=%2289%25%22 cy=%2218%25%22%3E%3Cstop offset=%220%25%22 stop-color=%22%2321D4FD%22%2F%3E%3Cstop offset=%22100%25%22 stop-color=%22%23B721FF%22%2F%3E%3C%2FradialGradient%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M834.5 652.5Q676 805 478.5 842.5T156 690Q31 500 190 369t310.5-131.5q151.5-.5 322 131t12 284Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22url(%23b)%22 d=%22M834.5 652.5Q676 805 478.5 842.5T156 690Q31 500 190 369t310.5-131.5q151.5-.5 322 131t12 284Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+position: absolute;
+z-index: -1;
+width: 80%;
+height:90%;
+background-size:contain;
+background-position: center center;
+background-repeat: no-repeat;
+background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CradialGradient id=%22b%22 r=%22100%25%22 cx=%2289%25%22 cy=%2218%25%22%3E%3Cstop offset=%220%25%22 stop-color=%22%2321D4FD%22%2F%3E%3Cstop offset=%22100%25%22 stop-color=%22%23B721FF%22%2F%3E%3C%2FradialGradient%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M834.5 652.5Q676 805 478.5 842.5T156 690Q31 500 190 369t310.5-131.5q151.5-.5 322 131t12 284Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22url(%23b)%22 d=%22M834.5 652.5Q676 805 478.5 842.5T156 690Q31 500 190 369t310.5-131.5q151.5-.5 322 131t12 284Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
 } */
