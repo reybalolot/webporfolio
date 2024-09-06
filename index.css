@@ -22,7 +22,7 @@ canvas {
 
 .sidebar {
     padding: 1% 2%;
-    width: clamp(370px, 1.5rem, 2rem);
+    width: clamp(200px, 1rem, 1rem);
     height: 100dvh;
 }
 
@@ -62,14 +62,13 @@ li, .nav-list {
     justify-content: center;
     align-items: center;
 
-    /* overflow-y: scroll; */
-    /*
+    overflow-y: scroll;
     -moz-scrollbar-width: none;
     -webkit-scrollbar-width: none;
     -ms-scrollbar-width: none;
-    scrollbar-width:none; */
+    scrollbar-width:none;
 
-    padding: 10%;
+    padding: clamp(10px, 2%, 10%);
     width: auto;
     height: 100dvh;
 
@@ -88,7 +87,7 @@ li, .nav-list {
 .rightbar {
     padding-bottom: 1%;
     min-width: 150px;
-    width: clamp(150px, 10rem, 2rem);
+    width: clamp(200px, 1rem, 1rem);
     height: 100%;
 
     display: flex;
@@ -107,11 +106,12 @@ main {
     position: absolute;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
-    width: auto;
+    width: 100dvw;
     height: 100dvh;
 
-    background-color: #272727;
+    /* background-color: #272727; */
 }
 
 .projects {
@@ -119,8 +119,8 @@ main {
     grid-template-columns: repeat(3, 1fr);
     gap: .5rem;
 
-    /* background-color:red; */
-    width: auto;
+    width: 60dvw;
+    height: 80dvh;
 }
 
 .grid-col-span-2 {
@@ -130,11 +130,21 @@ main {
 .card {
     width: auto;
     height: auto;
-}
-/*
-.card-1 {
+    border: 2px solid #4f5f5d;
 
-} */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:nth-child(3) {
+    background: #4f5f5d;
+    grid-row-start: 2;
+    grid-row-end: 4 ;
+}
+.card:nth-last-child(2){
+    background-color: #4f5f5d;
+}
 
 /*768px*/
 @media only screen and (max-width: 900px) {
@@ -153,6 +163,20 @@ main {
     }
     main {
         flex-direction: column;
+    }
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: .5rem;
+
+        width: 60dvw;
+        height: 80dvh;
+    }
+    .grid-col-span-2 {
+        grid-column: 1;
+    }
+    .card {
+        height: 20rem;
     }
 }
 
