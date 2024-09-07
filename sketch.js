@@ -24,12 +24,12 @@ function setup() {
 
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
-    mouseTrail();
+    // mouseTrail();
 }
 
 function draw() {
     background('#272727');
-    mouseTrail();
+    // mouseTrail();
 }
 
 function mouseTrail() {
@@ -76,11 +76,11 @@ let elList = document.querySelectorAll('.nav-list')
 elList.forEach(el => {
 
     el.addEventListener('mouseover', () => {
-        el.classList.add('nav-select')
+        // el.classList.add('nav-select')
         isEl = true
     })
     el.addEventListener('mouseout', () => {
-        el.classList.remove('nav-select')
+        // el.classList.remove('nav-select')
         isEl= false
     })
 })

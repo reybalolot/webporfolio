@@ -33,13 +33,13 @@
                 <div class="bottom-links">
                     <ul>
                         <li>
-                            <a href="" class="nav-list">linkedIn</a>
+                            <a href="" id="linkedIn" class="nav-list">linkedIn</a>
                         </li>
                         <li>
-                            <a href="" class="nav-list">facebook</a>
+                            <a href="" id="facebook" class="nav-list">facebook</a>
                         </li>
                         <li>
-                            <a href="" class="nav-list">github</a>
+                            <a href="" id="github" class="nav-list">github</a>
                         </li>
                     </ul>
                 </div>
@@ -47,81 +47,60 @@
         </div>
         <section class="main-container">
             <div class="container-content home">
-                <div class="text">
+                <div class="text" >
 
-                    <h2>Hi! I'm Rey Balolot, I like to make web stuff.</h2>
-                    <!-- <h3>I do Full-Stack Development.</h3> -->
-                    <p>I'm mainly focused on the
+                    <h1>Hi! I'm Rey Balolot, I like to make web stuff.</h1>
+                    <hr>
+                    <p>
+                        I'm mainly focused on the
                         <span id="mern">MERN</span> and
-                        <span id="csharp">C# ASP.Net</span> stack for a Full-Stack Development.</p>
-                        <p>I am also knowledgeable on the following technologies: </p>
-                        <span id="tech">PostgreSQL</span>
-                    </div>
-                </div>
-                <div class="container-content projects">
-                    <div class="card grid-col-span-2">
-                        Coming soon...
-                    </div>
-                    <div class="card">
-                        Coming soon...
-                    </div>
-                    <div class="card">
-                        Coming soon...
-                    </div>
-                    <div class="card">
-                        Coming soon...
-                    </div>
-                    <div class="card">
-                        Coming soon...
-                    </div>
-                    <div class="card grid-col-span-2">
-                        Coming soon...
-                    </div>
-                </div>
-
-                <div class="container-content about"></div>
-
-                <div class="container-content contact"></div>
-
-                <div class="magicpattern"></div>
-            </section>
-            <div class="rightbar">
-                <div class="footer-items">
-                    <h6>
-                        &copy; All Rights Reserved
-                    </h6>
+                        <span id="csharp">C# ASP.Net</span> stack for a Full-Stack Development.
+                    </p>
+                    <p>
+                        I am also knowledgeable on the following technologies:
+                    </p>
+                    <span id="tech">PostgreSQL</span>
                 </div>
             </div>
-        </main>
+            <div class="container-content projects">
+                <div class="card grid-col-span-2">
+                    Coming soon...
+                </div>
+                <div class="card">
+                    Coming soon...
+                </div>
+                <div class="card">
+                    Coming soon...
+                </div>
+                <div class="card">
+                    Coming soon...
+                </div>
+                <div class="card">
+                    Coming soon...
+                </div>
+                <div class="card grid-col-span-2">
+                    Coming soon...
+                </div>
+            </div>
 
-        <!-- Fontawesome Script -->
-        <script src="https://kit.fontawesome.com/f77fb5b473.js" crossorigin="anonymous"></script>
-        <script src="sketch.js"></script>
+            <div class="container-content about"></div>
 
-        <script type="module">
-            import { annotate, annotationGroup } from 'https://unpkg.com/rough-notation?module';
-            const s1 = document.querySelector('#tech');
-            const s2 = document.querySelector('#mern');
-            const s3 = document.querySelector('#csharp');
+            <div class="container-content contact"></div>
 
-            const a1 = annotate(s1, { type: 'underline', color: 'blue' });
-            const a2 = annotate(s2, { type: 'highlight', color: 'green' });
-            const a3 = annotate(s3, { type: 'highlight', color: 'purple' });
+            <div class="magicpattern"></div>
+        </section>
+        <div class="rightbar">
+            <div class="footer-items">
+                <h6>
+                    &copy; All Rights Reserved
+                </h6>
+            </div>
+        </div>
+    </main>
 
-            const ag = annotationGroup([a1, a2, a3]);
-            // ag.show();
-
-            const div = document.querySelector('.text')
-            div.addEventListener('mouseover', () => {
-                // a1.color = 'yellow'
-                // a1.hide();
-                ag.show()
-            })
-            div.addEventListener('mouseout', () => {
-                // a2.color = 'black'
-                ag.hide()
-            })
-
-        </script>
-    </body>
-    </html>
+    <!-- Fontawesome Script -->
+    <script src="https://kit.fontawesome.com/f77fb5b473.js" crossorigin="anonymous"></script>
+    <script src="sketch.js"></script>
+    <script type="module" src="annotate.js"></script>
+</body>
+</html>
