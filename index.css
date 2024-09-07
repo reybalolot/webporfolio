@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    -moz-user-select: none;
+    /* -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-    user-select: none;
+    user-select: none; */
 
 }
 
@@ -61,6 +61,7 @@ li, .nav-list {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     overflow-y: scroll;
     -moz-scrollbar-width: none;
@@ -114,8 +115,19 @@ main {
     /* background-color: #272727; */
 }
 
+.home {
+    display: block;
+    margin: 20%;
+    width: 50dvw;
+    height: 50dvh;
+    line-height: 30px;
+    /* border: 1px solid red; */
+}
+
+
 .projects {
     display: grid;
+    display: none;
     grid-template-columns: repeat(3, 1fr);
     gap: .5rem;
 
@@ -148,14 +160,11 @@ main {
 
 /*768px*/
 @media only screen and (max-width: 900px) {
-    .sidebar, .rightbar {
-        /* display: none; */
+    .title {
+        margin: 0;
     }
     .link-items {
         display: none;
-    }
-    .title {
-        margin: 0;
     }
     .sidebar, .rightbar {
         width: auto;
@@ -166,6 +175,7 @@ main {
     }
     .projects {
         display: grid;
+        display: none;
         grid-template-columns: 1fr;
         gap: .5rem;
 
@@ -191,4 +201,4 @@ background-size:contain;
 background-position: center center;
 background-repeat: no-repeat;
 background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CradialGradient id=%22b%22 r=%22100%25%22 cx=%2289%25%22 cy=%2218%25%22%3E%3Cstop offset=%220%25%22 stop-color=%22%2321D4FD%22%2F%3E%3Cstop offset=%22100%25%22 stop-color=%22%23B721FF%22%2F%3E%3C%2FradialGradient%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M834.5 652.5Q676 805 478.5 842.5T156 690Q31 500 190 369t310.5-131.5q151.5-.5 322 131t12 284Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22url(%23b)%22 d=%22M834.5 652.5Q676 805 478.5 842.5T156 690Q31 500 190 369t310.5-131.5q151.5-.5 322 131t12 284Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-} */
+ } */
