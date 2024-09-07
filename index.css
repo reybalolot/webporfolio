@@ -40,10 +40,21 @@ canvas {
     color: green;
 }
 
-li, .nav-list {
+li {
     margin-bottom: .5rem;
-    text-decoration: none;
     list-style-type: none;
+    padding: .2rem;
+}
+
+.top-links a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.bottom-links i {
+    text-align: center;
+    width: 1em;
+    height: 1rem;
     color: var(--primary-color);
 }
 

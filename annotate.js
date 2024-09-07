@@ -7,12 +7,12 @@ const facebook = document.querySelector('#facebook');
 const github = document.querySelector('#github');
 
 const a1 = annotate(tech, { type: 'underline', color: 'blue' });
-const a2 = annotate(mern, { type: 'highlight', color: 'green' });
-const a3 = annotate(cs, { type: 'highlight', color: 'purple' });
+const a2 = annotate(mern, { type: 'circle', color: 'green' });
+const a3 = annotate(cs, { type: 'circle', color: 'purple' });
 
-const li = annotate(linkedIn, {type: 'highlight', color: '#0a66c2'})
-const fb = annotate(facebook, {type: 'highlight', color: '#0866ff'})
-const gh = annotate(github, {type: 'highlight', color: '#151b23'})
+const li = annotate(linkedIn, {type: 'box', color: '#0a66c2'})
+const fb = annotate(facebook, {type: 'box', color: '#0866ff', padding: 6})
+const gh = annotate(github, {type: 'circle', color: '#151b23', padding: 8})
 
 const ag = annotationGroup([a2, a3, a1]);
 
