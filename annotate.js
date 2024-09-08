@@ -20,6 +20,12 @@ setTimeout(() => {
     ag.show()
 }, 1200);
 
+const home = document.querySelector('.main-container');
+home.addEventListener('scroll', (e) => {
+    ag.hide();
+    // console.log(e.target)
+})
+
 // const div = document.querySelector('.text')
 
 // div.addEventListener('mouseover', () => {
