@@ -72,8 +72,9 @@ h1 {
 
 hr {
     margin: 20px 0;
+    border-radius: 2px;
+    border: 2px solid #4f5f5d;
 }
-
 
 
 .link-items {
@@ -147,7 +148,7 @@ main {
 .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: .5rem;
+    gap: 1rem;
 
     overflow-y: scroll;
     padding: 10%;
