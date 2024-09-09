@@ -20,17 +20,16 @@ setTimeout(() => {
     ag.show()
 }, 1200);
 
-const home = document.querySelector('.main-container');
-home.addEventListener('scroll', (e) => {
+const main = document.querySelector('.main-container');
+main.addEventListener('scroll', (e) => {
     ag.hide();
     // console.log(e.target)
 })
 
-// const div = document.querySelector('.text')
-
-// div.addEventListener('mouseover', () => {
-//    ag.show();
-// });
+const div = document.querySelector('.text')
+div.addEventListener('mouseover', () => {
+   ag.show();
+});
 // if (performance == performance.TYPE_RELOAD) {
 //     ag.hide();
 // }

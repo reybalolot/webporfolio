@@ -50,7 +50,7 @@ canvas {
 li {
     margin-bottom: .5rem;
     list-style-type: none;
-    padding: .2rem;
+    padding: .5rem;
 }
 
 .top-links a {
@@ -119,7 +119,8 @@ main {
 .main-container {
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
 
     width: 100%;
     height: 100%;
@@ -127,10 +128,12 @@ main {
 }
 
 #home-container {
-    display: block;
+    display: flex;
     line-height: 25px;
+    scroll-snap-align: start;
+    /* top: 0; */
+    /* position: sticky; */
 
-    padding: 20% 5%;
     width: 100%;
     height: 100%;
     min-height: 100%;
@@ -139,10 +142,28 @@ main {
 #projects-container {
     display: flex;
     justify-content: center;
+    scroll-snap-align:start;
+    /* position: sticky; */
 
     width: 100%;
     height: 100%;
     min-height: 100%;
+}
+
+#contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align:start;
+    /* position: sticky; */
+
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+.home {
+    padding: 20% 10%;
 }
 
 .projects {
