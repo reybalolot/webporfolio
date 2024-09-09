@@ -23,17 +23,12 @@ setTimeout(() => {
 const main = document.querySelector('.main-container');
 main.addEventListener('scroll', (e) => {
     ag.hide();
-    // console.log(e.target)
 })
 
 const div = document.querySelector('.text')
 div.addEventListener('mouseover', () => {
    ag.show();
 });
-// if (performance == performance.TYPE_RELOAD) {
-//     ag.hide();
-// }
-// div.addEventListener('mouseout', () => { ag.hide() });
 
 /////////////
 
@@ -44,12 +39,3 @@ github.addEventListener('mouseover', () => gh.show());
 linkedIn.addEventListener('mouseout', () => li.hide());
 facebook.addEventListener('mouseout', () => fb.hide());
 github.addEventListener('mouseout', () => gh.hide());
-
-// const links = [linkedIn, facebook, github]
-// links.forEach(element => {
-//     element.addEventListener('mouseout', () => {
-//         li.hide();
-//         fb.hide();
-//         gh.hide();
-//     })
-// });
