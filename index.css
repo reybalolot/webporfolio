@@ -22,7 +22,17 @@
 canvas {
     display: block;
     position: absolute;
-    z-index: -2;
+    z-index: -12;
+}
+
+body:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -10;
+    opacity: .2;
+    background: url(/images/bg-noise.png) 20px 20px repeat;
+    mix-blend-mode: multiply;
 }
 
 :root {

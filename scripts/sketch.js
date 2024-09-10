@@ -29,7 +29,7 @@ function windowResized() {
 
 function draw() {
     background('#272727');
-    // mouseTrail();
+    mouseTrail();
 }
 
 function mouseTrail() {
@@ -43,10 +43,10 @@ function mouseTrail() {
                 let x = i * boxSize;
                 let y = j * boxSize;
                 noFill()
-
                 if (grid[i][j] == alpha && isEl) {
                     setTimeout(() => {noStroke()}, 10000);
                 } else {
+                    fill()
 
                     stroke(80, 95, 95, grid[i][j]);
                     square(x, y, boxSize);
