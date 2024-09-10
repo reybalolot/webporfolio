@@ -16,19 +16,19 @@ const gh = annotate(github, {type: 'circle', color: '#151b23', padding: 8})
 
 const ag = annotationGroup([a2, a3, a1]);
 
-setTimeout(() => {
-    ag.show()
-}, 1200);
 
 const main = document.querySelector('.main-container');
-main.addEventListener('scroll', (e) => {
+main.addEventListener('scroll', () => {
     ag.hide();
 })
 
-const div = document.querySelector('.home')
-div.addEventListener('mouseover', () => {
-   ag.show();
+const div = document.querySelector('#home-container')
+div.addEventListener('mouseenter', () => {
+    ag.show();
 });
+// div.addEventListener('mouseleave', () => {
+//     ag.hide();
+// });
 
 /////////////
 
