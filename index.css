@@ -15,7 +15,7 @@
     -moz-scrollbar-width: none;
     -webkit-scrollbar-width: none;
     -ms-scrollbar-width: none;
-    scrollbar-width:none;
+    scrollbar-width: none;
 
 }
 
@@ -52,7 +52,6 @@ body:before {
     background: radial-gradient(50% 80% at 50% 50%, hsla(0, 0%, 100%, 0) 70%, #272727);
     opacity: .8;
     animation: circle 1s ease 1.5s forwards;
-    /* transform: translateZ(0) rotate(50deg) skewX(0) skewY(0) scaleX(1) scaleY(1); */
 }
 
 :root {
@@ -66,7 +65,6 @@ body:before {
     padding: 1% 2%;
     width: var(--side-width) ;
     height: 100dvh;
-    /* display: none; <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 }
 
 .title {
@@ -124,7 +122,6 @@ hr {
     height: 100%;
 
     display: flex;
-    /*display: none; /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
     justify-content:flex-end;
     flex-direction: column;
 
@@ -150,7 +147,6 @@ main {
 
 .main-container {
     display: flex;
-    /*display: none; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
     flex-direction: column;
     overflow-y: auto;
     scroll-snap-type: y mandatory;
@@ -217,11 +213,20 @@ main {
 .card {
     width: auto;
     height: auto;
-    border: 2px solid #4f5f5d;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #272727;
+
+    transition: .5s;
+}
+
+.card:hover {
+    transition: .5s;
+    -webkit-box-shadow: 0px 1px 20px 3px rgba(0,0,0,0.51);
+    -moz-box-shadow: 0px 1px 20px 3px rgba(0,0,0,0.51);
+    box-shadow: 0px 1px 20px 3px rgba(0,0,0,0.51);
 }
 
 .card:nth-child(3) {
