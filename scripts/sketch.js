@@ -10,54 +10,90 @@ function make2dArray(cols, rows) {
 }
 
 let grid, cols, rows;
-let boxSize = 25;//20
 let alpha = 255;
-let trail = 5;
-let focusDelay = trail + 2
+let boxSize = 20;//20
+let trail = 10; //5
+let focusDelay = trail + 2;
+// let rand
+let circleSize = 10;
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
     cols = ceil(width / boxSize);
     rows = ceil(height / boxSize);
     grid = make2dArray(cols, rows);
+    // rand = ceil(random(boxSize));
 }
 
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
-    // mouseTrail();
+    mouseTrail();
+    squareGridDisplay();
 }
 
 function draw() {
     background('#272727');
     mouseTrail();
+    squareGridDisplay();
+    // mouseSquare();
+}
+
+function squareGridDisplay() {
+    for (let i = 0; i < cols; i++) {
+        for (let j = 0; j < rows; j++) {
+            noFill()
+            stroke(20, 20, 20, 10)
+            rect(i * boxSize, j * boxSize, boxSize)
+        }
+    }
+}
+
+function mouseSquare() {
+    // noFill()
+    // stroke('white')
+    // if (rand !== mouseX-(boxSize/2)) {
+    //     rand++;
+    // }
+    // square(mouseX - rand, mouseY - rand, boxSize)
+    // console.log(rand)
 }
 
 function mouseTrail() {
     let x = floor(mouseX / boxSize);
     let y = floor(mouseY / boxSize);
-    grid[x][y] = alpha
+    grid[x][y] = alpha;
 
     for (let i = 0; i < cols; i++) {
         for (let j = 0; j < rows; j++) {
             if (grid[i][j] > 0) {
                 let x = i * boxSize;
                 let y = j * boxSize;
-                noFill()
                 if (grid[i][j] == alpha && isEl) {
                     setTimeout(() => {noStroke()}, 10000);
                 } else {
-                    fill()
-
+                    noFill()
+                    // fill(80, 95, 95)
                     stroke(80, 95, 95, grid[i][j]);
                     square(x, y, boxSize);
                     square(x, y, boxSize);
                 }
+
+                if (grid[i][j] == alpha & isEl) {
+                    setTimeout(() => {
+                            noFill();
+                        noStroke();
+                    }, 10000);
+                } else {
+                    fill(80, 95, 95)
+                    ellipse(x + boxSize / 2, y + boxSize /2, circleSize)
+                }
             }
         }
     }
-
+    // fade
     for (let i = 0; i < cols; i++) {
         for (let j = 0; j < rows; j++) {
+            //&& !El
             if (grid[i][j] > 0 && !isEl) {
                 grid[i][j] -= trail;
             }

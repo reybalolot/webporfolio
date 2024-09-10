@@ -25,7 +25,7 @@ main.addEventListener('scroll', (e) => {
     ag.hide();
 })
 
-const div = document.querySelector('.text')
+const div = document.querySelector('.home')
 div.addEventListener('mouseover', () => {
    ag.show();
 });

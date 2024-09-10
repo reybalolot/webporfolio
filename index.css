@@ -22,14 +22,14 @@
 canvas {
     display: block;
     position: absolute;
-    z-index: -12;
+    z-index: -3;
 }
 
 body:before {
     content: "";
     position: absolute;
     inset: 0;
-    z-index: -10;
+    z-index: -2;
     opacity: .2;
     background: url(/images/bg-noise.png) 20px 20px repeat;
     mix-blend-mode: multiply;
