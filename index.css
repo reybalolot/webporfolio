@@ -32,7 +32,7 @@ body:before {
     z-index: -2;
     opacity: .2;
     background: url('/webportfolio/images/bg-noise.png') 20px 20px repeat;
-    background: url('/images/bg-noise.png') 20px 20px repeat;
+    /* background: url('/images/bg-noise.png') 20px 20px repeat; */
     mix-blend-mode: multiply;
 }
 
