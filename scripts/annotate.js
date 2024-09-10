@@ -26,9 +26,6 @@ const div = document.querySelector('#home-container')
 div.addEventListener('mouseenter', () => {
     ag.show();
 });
-// div.addEventListener('mouseleave', () => {
-//     ag.hide();
-// });
 
 /////////////
 
