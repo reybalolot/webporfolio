@@ -31,8 +31,8 @@ body:before {
     inset: 0;
     z-index: -2;
     opacity: .2;
-    /* background: url('/webportfolio/images/bg-noise.png') 20px 20px repeat; */
-    background: url('/images/bg-noise.png') 20px 20px repeat;
+    background: url('/webportfolio/images/bg-noise.png') 20px 20px repeat;
+    /* background: url('/images/bg-noise.png') 20px 20px repeat; */
     mix-blend-mode: multiply;
 }
 
@@ -229,7 +229,8 @@ main {
 
 .card-1 {
     text-decoration: none;
-    background: url('/images/pj-1.png');
+    /* background: url('/images/pj-1.png'); */
+    background: url('/webportfolio/images/pj-1.png');
     background-position: center;
     background-repeat: no-repeat;
 }
