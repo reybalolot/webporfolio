@@ -336,6 +336,37 @@ main {
     grid-row-end: 4 ;
 }
 
+.form {
+    font-family: 'Poppins';
+    color:#E9E9E9;
+    padding: 10px;
+    background-color: #373737;
+    border: 1px solid #4f5f5d;
+    border-radius: 5px;
+    margin: .5rem;
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+}
+.btn {
+    display: block;
+    color:#E9E9E9;
+    padding: 10px;
+    margin: .5rem;
+    background-color: #272727;
+    border: 1px solid #4f5f5d;
+}
+
+
 /*768px*/
 @media only screen and (max-width: 900px) {
     .title {
